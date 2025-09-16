@@ -1,62 +1,155 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Krishnaveni Bojja | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Krishnaveni | Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background-color: #1c1c1c;
+      color: white;
+    }
+
+    /* Navbar */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background-color: #2a2a2a;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav .logo {
+      font-size: 18px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 15px;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #f39c12;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100vh;
+      padding: 0 50px;
+    }
+
+    .hero-left img {
+      max-width: 420px;
+      border-radius: 10px;
+      filter: grayscale(100%);
+    }
+
+    .hero-right {
+      max-width: 500px;
+    }
+
+    .hero-right h1 {
+      font-size: 50px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .hero-right p {
+      color: #b5b5b5;
+      font-size: 16px;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 20px;
+    }
+
+    .btn {
+      padding: 12px 25px;
+      border: none;
+      font-size: 15px;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    .btn-primary {
+      background: #f39c12;
+      color: #1c1c1c;
+    }
+
+    .btn-primary:hover {
+      background: #d35400;
+    }
+
+    .btn-outline {
+      border: 2px solid #f39c12;
+      background: transparent;
+      color: #f39c12;
+    }
+
+    .btn-outline:hover {
+      background: #f39c12;
+      color: #1c1c1c;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Krishnaveni Bojja</h1>
-        <p>Java Developer | Final Year CSE Student | Passionate Problem Solver</p>
-    </header>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">Krishnaveni</div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>An adaptable and driven individual, passionate about technology and innovation, 
-        with a strong belief that hard work and dedication can overcome any challenge. 
-        Proficient in Java and learning Blockchain technology, seeking to contribute to dynamic teams 
-        and deliver high-quality results.</p>
-    </section>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-left">
+      <img src="your-photo.jpg" alt="Krishnaveni">
+    </div>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Community Health Awareness Campaign</h3>
-            <p>Health platform with vaccination updates, doctor appointments, and health articles.</p>
-            <p><strong>Tech:</strong> HTML, CSS, JavaScript, MongoDB</p>
-        </div>
-        <div class="project">
-            <h3>SkillSwap Platform (Ongoing)</h3>
-            <p>AI-driven skill exchange platform for users to connect and trade expertise.</p>
-            <p><strong>Tech:</strong> HTML, CSS, Java, Spring Boot, MongoDB</p>
-        </div>
-        <div class="project">
-            <h3>Public Speaking Coach with Feedback (Ongoing)</h3>
-            <p>AI-powered tool that provides real-time feedback to improve public speaking.</p>
-            <p><strong>Tech:</strong> HTML, CSS, Java, Spring Boot, MongoDB, AI</p>
-        </div>
-    </section>
-
-    <section id="skills">
-        <h2>Skills</h2>
-        <p>Java, Python, Spring Boot, React.js, HTML, CSS, JavaScript, MongoDB, SQL, DSA</p>
-    </section>
-
-    <section id="resume">
-        <h2>Resume</h2>
-        <a href="resume.pdf" download>Download Resume</a>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:b49816296@gmail.com">b49816296@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/your-profile" target="_blank">Your LinkedIn</a></p>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Krishnaveni Bojja</p>
-    </footer>
+    <div class="hero-right">
+      <h1>Hi, I'm Krishnaveni 👩‍💻</h1>
+      <p>
+        Final-year Computer Science student passionate about building scalable applications 
+        and blockchain solutions. Certified in ServiceNow CSA & CAD.
+      </p>
+      <div class="buttons">
+        <button class="btn btn-primary">Explore Projects</button>
+        <button class="btn btn-outline">Download Resume</button>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
